@@ -46,7 +46,6 @@
   .contributor-list {
     display: flex;
     flex-wrap: wrap;
-    background-color: white;
     border-radius: 3rem;
   }
   .contributor-image {
@@ -55,6 +54,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+      rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
   .contributor-image:nth-child(n + 2) {
     margin-left: -1.5rem;
@@ -63,6 +64,7 @@
   .underline-animation {
     position: relative;
     display: inline-block;
+    cursor: pointer;
   }
 
   .underline-animation::after {
