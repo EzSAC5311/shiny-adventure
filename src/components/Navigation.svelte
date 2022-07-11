@@ -1,4 +1,5 @@
 <script>
+  import MenuTab from "./MenuTab.svelte";
   let isOpen = true;
   window.onscroll = function () {
     if (this.oldScroll > this.scrollY) {
@@ -21,10 +22,7 @@
       />
       <p class="company-name">MC-LOHAPHAN</p>
     </div>
-    <div class="menu-tab">
-      <div class="menu">Contact</div>
-      <div class="menu">Discord</div>
-    </div>
+    <MenuTab />
   </div>
 </nav>
 
@@ -33,6 +31,7 @@
     position: fixed;
     width: 100%;
     display: flex;
+    z-index: 999;
   }
   .container {
     background-color: white;
@@ -55,10 +54,6 @@
   }
   .company-name {
     font-weight: bold;
-  }
-  .menu-tab {
-    display: flex;
-    margin: auto 1rem;
-    gap: 2rem;
+    cursor: url(https://abs.twimg.com/emoji/v2/72x72/1f525.png) 36 36, auto;
   }
 </style>
