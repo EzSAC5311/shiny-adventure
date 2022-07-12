@@ -26,7 +26,7 @@
   </div>
 </nav>
 
-<style>
+<style lang="scss">
   nav {
     position: fixed;
     width: 100%;

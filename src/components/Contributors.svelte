@@ -28,7 +28,7 @@
   </div>
 </div>
 
-<style>
+<style lang="scss">
   .contributor {
     position: relative;
     height: 100vh;
@@ -38,16 +38,19 @@
     align-items: center;
     flex-direction: column;
   }
+
   .contributor-title {
     font-size: 3rem;
     margin-bottom: 2rem;
     color: rgb(0, 173, 181);
   }
+
   .contributor-list {
     display: flex;
     flex-wrap: wrap;
     border-radius: 3rem;
   }
+
   .contributor-image {
     border: 3px solid white;
     border-radius: 50%;
@@ -56,33 +59,34 @@
     height: 5rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
       rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  }
-  .contributor-image:nth-child(n + 2) {
-    margin-left: -1.5rem;
+
+    &:nth-child(n + 2) {
+      margin-left: -1.5rem;
+    }
   }
 
   .underline-animation {
     position: relative;
     display: inline-block;
     cursor: pointer;
-  }
 
-  .underline-animation::after {
-    content: "";
-    width: 100%;
-    height: 0.2rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: rgb(238, 238, 238);
-    border-radius: 0.2rem;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s ease-in-out;
-  }
+    &::after {
+      content: "";
+      width: 100%;
+      height: 0.2rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: rgb(238, 238, 238);
+      border-radius: 0.2rem;
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform 0.3s ease-in-out;
+    }
 
-  .underline-animation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
   }
 </style>

@@ -12,7 +12,7 @@
   </div>
 </div>
 
-<style>
+<style lang="scss">
   .box {
     display: flex;
     height: 100vh;
@@ -20,12 +20,15 @@
     align-items: center;
     color: white;
   }
+
   .fix-box {
     position: fixed;
   }
+
   .flex-box {
     display: flex;
   }
+
   .btn-custom {
     cursor: pointer;
     outline: none;
@@ -37,8 +40,9 @@
     height: 3rem;
     background-color: rgb(240, 165, 0);
     color: white;
-  }
-  .btn-custom:hover {
-    background-color: rgb(240, 165, 0, 0.9);
+
+    &:hover {
+      background-color: rgba(240, 165, 0, 0.9);
+    }
   }
 </style>
